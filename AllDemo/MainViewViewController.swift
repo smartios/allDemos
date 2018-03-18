@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Alamofire
 
 class MainViewViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
@@ -17,7 +18,7 @@ class MainViewViewController: UIViewController, UITableViewDataSource, UITableVi
 
         settingNav(navView: self.navigationController!)
         self.title = "Select Demo"
-        
+        webservice()
         // Do any additional setup after loading the view.
     }
 
@@ -85,6 +86,27 @@ class MainViewViewController: UIViewController, UITableViewDataSource, UITableVi
             self.navigationController?.pushViewController(vc, animated: true)
         }
         
+    }
+    
+    func webservice()
+    {
+        let dic = NSDictionary()
+        let va = dic as! Parameters
+        Alamofire.request("https://yourServiceURL.com", method: .post, parameters:va, encoding: JSONEncoding.default, headers: nil).responseJSON { (response:DataResponse<Any>) in
+            
+            switch(response.result) {
+            case .success(_):
+                if response.result.value != nil{
+                    print(response.result.value!)
+                }
+                break
+                
+            case .failure(_):
+                print(response.result.error!)
+                break
+                
+            }
+        }
     }
     
 }
