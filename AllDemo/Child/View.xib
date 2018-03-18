@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ho gaya" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wyB-z8-JCJ">
+                    <rect key="frame" x="87" y="176" width="200" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="lfR-ax-dn3"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ywH-Jb-x0G">
+                    <rect key="frame" x="87.5" y="316" width="200" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="67v-ab-POF"/>
+                        <constraint firstAttribute="width" constant="200" id="Lsn-Ee-8Eo"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="wyB-z8-JCJ" secondAttribute="trailing" constant="88" id="1GG-QE-MSS"/>
+                <constraint firstItem="wyB-z8-JCJ" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="87" id="1j4-op-fi7"/>
+                <constraint firstItem="wyB-z8-JCJ" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="156" id="A6S-4I-j93"/>
+                <constraint firstItem="ywH-Jb-x0G" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="TjL-zi-5AH"/>
+                <constraint firstItem="ywH-Jb-x0G" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="URQ-Io-Ekw"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+        </view>
+    </objects>
+</document>

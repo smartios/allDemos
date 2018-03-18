@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewController" customModule="AllDemo" customModuleProvider="target">
+            <connections>
+                <outlet property="tableView" destination="fVT-ho-5qZ" id="O9n-f8-wwr"/>
+                <outlet property="view" destination="aeq-88-wol" id="SUy-lo-lhB"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="aeq-88-wol">
+            <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="fVT-ho-5qZ">
+                    <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="SLH-pq-pk7"/>
+                        <outlet property="delegate" destination="-1" id="DmN-B3-PbV"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <constraints>
+                <constraint firstItem="fVT-ho-5qZ" firstAttribute="trailing" secondItem="JYc-dz-HdB" secondAttribute="trailing" id="UVZ-L2-PCr"/>
+                <constraint firstItem="fVT-ho-5qZ" firstAttribute="bottom" secondItem="JYc-dz-HdB" secondAttribute="bottom" id="lfy-S6-lcF"/>
+                <constraint firstItem="fVT-ho-5qZ" firstAttribute="top" secondItem="aeq-88-wol" secondAttribute="top" id="r6J-Hs-PkW"/>
+                <constraint firstItem="fVT-ho-5qZ" firstAttribute="leading" secondItem="JYc-dz-HdB" secondAttribute="leading" id="sgU-8G-zpj"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="JYc-dz-HdB"/>
+            <point key="canvasLocation" x="163" y="-536"/>
+        </view>
+    </objects>
+</document>
