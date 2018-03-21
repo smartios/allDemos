@@ -18,7 +18,7 @@ class MainViewViewController: UIViewController, UITableViewDataSource, UITableVi
 
         settingNav(navView: self.navigationController!)
         self.title = "Select Demo"
-        webservice()
+        
         // Do any additional setup after loading the view.
     }
 
@@ -29,7 +29,7 @@ class MainViewViewController: UIViewController, UITableViewDataSource, UITableVi
     
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 4
+        return 5
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -56,6 +56,10 @@ class MainViewViewController: UIViewController, UITableViewDataSource, UITableVi
         else if(indexPath.row == 3)
         {
             label.text = "Child View Demo"
+        }
+        else if(indexPath.row == 4)
+        {
+            label.text = "Session Demo"
         }
         
         return cell
@@ -85,28 +89,31 @@ class MainViewViewController: UIViewController, UITableViewDataSource, UITableVi
             let vc = story.instantiateViewController(withIdentifier: "AddMainViewController") as! AddMainViewController
             self.navigationController?.pushViewController(vc, animated: true)
         }
-        
-    }
-    
-    func webservice()
-    {
-        let dic = NSDictionary()
-        let va = dic as! Parameters
-        Alamofire.request("https://yourServiceURL.com", method: .post, parameters:va, encoding: JSONEncoding.default, headers: nil).responseJSON { (response:DataResponse<Any>) in
-            
-            switch(response.result) {
-            case .success(_):
-                if response.result.value != nil{
-                    print(response.result.value!)
-                }
-                break
-                
-            case .failure(_):
-                print(response.result.error!)
-                break
-                
-            }
+        else if(indexPath.row == 4)
+        {
+            let vc = SessionViewController(nibName: "SessionViewController", bundle: nil)
+            self.navigationController?.pushViewController(vc, animated: true)
         }
     }
+    
+//    func webservice()
+//    {
+//        let va = dic as! Parameters
+//        Alamofire.request("https://yourServiceURL.com", method: .post, parameters:va, encoding: JSONEncoding.default, headers: nil).responseJSON { (response:DataResponse<Any>) in
+//
+//            switch(response.result) {
+//            case .success(_):
+//                if response.result.value != nil{
+//                    print(response.result.value!)
+//                }
+//                break
+//
+//            case .failure(_):
+//                print(response.result.error!)
+//                break
+//
+//            }
+//        }
+//    }
     
 }

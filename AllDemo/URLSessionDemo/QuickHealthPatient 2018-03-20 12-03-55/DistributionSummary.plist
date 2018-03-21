@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>QuickHealthPatient.ipa</key>
+	<array>
+		<dict>
+			<key>architectures</key>
+			<array>
+				<string>armv7</string>
+				<string>arm64</string>
+			</array>
+			<key>certificate</key>
+			<dict>
+				<key>SHA1</key>
+				<string>4746D8543D74FF782196B2A90EF3DA7150B8D11A</string>
+				<key>dateExpires</key>
+				<string>2/16/19</string>
+				<key>type</key>
+				<string>iOS Distribution</string>
+			</dict>
+			<key>embeddedBinaries</key>
+			<array>
+				<dict>
+					<key>architectures</key>
+					<array>
+						<string>armv7</string>
+						<string>arm64</string>
+					</array>
+					<key>certificate</key>
+					<dict>
+						<key>SHA1</key>
+						<string>4746D8543D74FF782196B2A90EF3DA7150B8D11A</string>
+						<key>dateExpires</key>
+						<string>2/16/19</string>
+						<key>type</key>
+						<string>iOS Distribution</string>
+					</dict>
+					<key>name</key>
+					<string>AFNetworking.framework</string>
+					<key>team</key>
+					<dict>
+						<key>id</key>
+						<string>J6XQ9CB78Q</string>
+						<key>name</key>
+						<string>SINGSYS PTE. LTD.</string>
+					</dict>
+				</dict>
+			</array>
+			<key>entitlements</key>
+			<dict>
+				<key>application-identifier</key>
+				<string>J6XQ9CB78Q.com.singsys.enterprise.QuickHealthPatientDev</string>
+				<key>aps-environment</key>
+				<string>production</string>
+				<key>com.apple.developer.icloud-container-identifiers</key>
+				<array>
+					<string>iCloud.com.singsys.enterprise.QuickHealthPatientDev</string>
+				</array>
+				<key>com.apple.developer.icloud-services</key>
+				<array>
+					<string>CloudDocuments</string>
+					<string>CloudKit</string>
+				</array>
+				<key>com.apple.developer.team-identifier</key>
+				<string>J6XQ9CB78Q</string>
+				<key>com.apple.developer.ubiquity-container-identifiers</key>
+				<array>
+					<string>iCloud.com.singsys.enterprise.QuickHealthPatientDev</string>
+				</array>
+				<key>com.apple.developer.ubiquity-kvstore-identifier</key>
+				<string>J6XQ9CB78Q.com.singsys.enterprise.QuickHealthPatientDev</string>
+				<key>get-task-allow</key>
+				<false/>
+			</dict>
+			<key>name</key>
+			<string>QuickHealthPatient.app</string>
+			<key>profile</key>
+			<dict>
+				<key>UUID</key>
+				<string>49805ddb-888d-40aa-9961-a78205566cf3</string>
+				<key>name</key>
+				<string>QuickHealthPatientPro</string>
+			</dict>
+			<key>team</key>
+			<dict>
+				<key>id</key>
+				<string>J6XQ9CB78Q</string>
+				<key>name</key>
+				<string>SINGSYS PTE. LTD.</string>
+			</dict>
+		</dict>
+	</array>
+</dict>
+</plist>

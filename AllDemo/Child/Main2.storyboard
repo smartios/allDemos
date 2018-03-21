@@ -98,7 +98,7 @@ Unicode: U+1F425, UTF-8: F0 9F 90 A5</string>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.70588235294117641" green="1" blue="0.39215686274509803" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.70588235294117641" green="1" blue="0.39215686274509803" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="D7e-fk-AMj" firstAttribute="leading" secondItem="jTE-hm-2GG" secondAttribute="trailing" constant="-200" id="DQU-Fa-q9y"/>
                             <constraint firstItem="D7e-fk-AMj" firstAttribute="leading" secondItem="jTE-hm-2GG" secondAttribute="leading" id="Hi4-0a-qBB"/>

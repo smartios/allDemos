@@ -36,6 +36,8 @@
 		8022EDC7205E5D750099E1E2 /* DesignableButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8022EDC1205E5D750099E1E2 /* DesignableButton.swift */; };
 		8022EDC8205E5D750099E1E2 /* AddMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8022EDC2205E5D750099E1E2 /* AddMainViewController.swift */; };
 		8022EDC9205E5D750099E1E2 /* StackDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8022EDC3205E5D750099E1E2 /* StackDemoViewController.swift */; };
+		80627510205F90C400D40BCC /* SessionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8062750E205F90C400D40BCC /* SessionViewController.swift */; };
+		80627511205F90C400D40BCC /* SessionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8062750F205F90C400D40BCC /* SessionViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -95,6 +97,8 @@
 		8022EDC1205E5D750099E1E2 /* DesignableButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableButton.swift; sourceTree = "<group>"; };
 		8022EDC2205E5D750099E1E2 /* AddMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddMainViewController.swift; sourceTree = "<group>"; };
 		8022EDC3205E5D750099E1E2 /* StackDemoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StackDemoViewController.swift; sourceTree = "<group>"; };
+		8062750E205F90C400D40BCC /* SessionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionViewController.swift; sourceTree = "<group>"; };
+		8062750F205F90C400D40BCC /* SessionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SessionViewController.xib; sourceTree = "<group>"; };
 		807687A3205E68540050BDAC /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		807687A5205E68EA0050BDAC /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		807687A7205E69DD0050BDAC /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -156,6 +160,7 @@
 		8022ED69205E507D0099E1E2 /* AllDemo */ = {
 			isa = PBXGroup;
 			children = (
+				80627509205F902B00D40BCC /* URLSessionDemo */,
 				8022EDBB205E5D490099E1E2 /* Child */,
 				8022EDB6205E5B060099E1E2 /* SearchTextfield */,
 				8022EDB3205E5A880099E1E2 /* SwipeDemo */,
@@ -251,6 +256,15 @@
 				8022EDBC205E5D580099E1E2 /* Main2.storyboard */,
 			);
 			path = Child;
+			sourceTree = "<group>";
+		};
+		80627509205F902B00D40BCC /* URLSessionDemo */ = {
+			isa = PBXGroup;
+			children = (
+				8062750E205F90C400D40BCC /* SessionViewController.swift */,
+				8062750F205F90C400D40BCC /* SessionViewController.xib */,
+			);
+			path = URLSessionDemo;
 			sourceTree = "<group>";
 		};
 		98CBB0F2BF17D3B16E58C83E /* Frameworks */ = {
@@ -399,6 +413,7 @@
 				8022ED72205E507D0099E1E2 /* Assets.xcassets in Resources */,
 				8022EDBD205E5D580099E1E2 /* Main2.storyboard in Resources */,
 				8022ED70205E507D0099E1E2 /* Main.storyboard in Resources */,
+				80627511205F90C400D40BCC /* SessionViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -480,6 +495,7 @@
 				8022ED9B205E51E30099E1E2 /* LoginViewController.swift in Sources */,
 				8022EDB8205E5B170099E1E2 /* SearchTextField.swift in Sources */,
 				8022EDA3205E572F0099E1E2 /* ConstantFunctions.swift in Sources */,
+				80627510205F90C400D40BCC /* SessionViewController.swift in Sources */,
 				8022EDC8205E5D750099E1E2 /* AddMainViewController.swift in Sources */,
 				8022EDC9205E5D750099E1E2 /* StackDemoViewController.swift in Sources */,
 				8022ED9E205E55860099E1E2 /* MainViewViewController.swift in Sources */,
